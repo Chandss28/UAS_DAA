@@ -84,7 +84,7 @@
     - Database MySQL/MariaDB untuk menyimpan data keanggotaan dan kegiatan.
     - Framework Laravel atau Django untuk backend sistem.
 
-Konfigurasi Docker
+Konfigurasi Docker :
 
     version: '3.8'
     services:
