@@ -85,6 +85,7 @@
     - Framework Laravel atau Django untuk backend sistem.
 
 Konfigurasi Docker
+
     version: '3.8'
     services:
     app:
