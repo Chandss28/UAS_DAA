@@ -1,0 +1,25 @@
+CREATE TABLE T_Keanggotaan (
+    id_anggota INT PRIMARY KEY AUTO_INCREMENT,
+    nama VARCHAR(100),
+    usia INT,
+    alamat TEXT,
+    kontak VARCHAR(20),
+    peran ENUM('Ketua', 'Sekretaris', 'Bendahara', 'Anggota')
+);
+
+CREATE TABLE T_Kegiatan (
+    id_kegiatan INT PRIMARY KEY AUTO_INCREMENT,
+    nama_kegiatan VARCHAR(100),
+    tanggal DATE,
+    lokasi VARCHAR(255),
+    penyelenggara VARCHAR(100)
+);
+
+CREATE TABLE T_Partisipasi (
+    id_partisipasi INT PRIMARY KEY AUTO_INCREMENT,
+    id_anggota INT,
+    id_kegiatan INT,
+    status ENUM('Terdaftar', 'Hadir', 'Tidak Hadir'),
+    FOREIGN KEY (id_anggota) REFERENCES T_Keanggotaan(id_anggota) ON DELETE CASCADE,
+    FOREIGN KEY (id_kegiatan) REFERENCES T_Kegiatan(id_kegiatan) ON DELETE CASCADE
+);

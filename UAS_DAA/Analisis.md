@@ -64,6 +64,9 @@
     2. Komunikasi dan Informasi: Portal berita dan pengumuman.
     3. Pendaftaran Kegiatan: Pendaftaran acara dan dokumentasi kegiatan.
 
+*   ERD
+    ![alt text](<Screenshot 2025-01-31 163802.png>)
+
 # 7. Implementasi Teknologi
 
     Untuk mendukung sistem ini, teknologi yang dapat digunakan meliputi:
