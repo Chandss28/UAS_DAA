@@ -35,27 +35,27 @@ Tujuan dari analisis SWOT ini adalah:
 
 - Strengths (Kekuatan)
 
-* ✅ Memiliki jaringan sosial yang luas antar pemuda.
-* ✅ Dapat menggerakkan program pemberdayaan masyarakat.
-* ✅ Struktur organisasi yang jelas.
-* ✅ Sumber daya manusia (SDM) muda yang aktif dan inovatif.
+    * ✅ Memiliki jaringan sosial yang luas antar pemuda.
+    * ✅ Dapat menggerakkan program pemberdayaan masyarakat.
+    * ✅ Struktur organisasi yang jelas.
+    * ✅ Sumber daya manusia (SDM) muda yang aktif dan inovatif.
 
 - Weaknesses (Kelemahan)
 
-* ❌ Kurangnya dana atau pendanaan yang stabil.
-* ❌ Tidak semua anggota memiliki komitmen tinggi.
-* ❌ Minimnya pelatihan kepemimpinan atau manajemen organisasi.
-* ❌ Terkadang kurangnya koordinasi dalam menjalankan program.
+    * ❌ Kurangnya dana atau pendanaan yang stabil.
+    * ❌ Tidak semua anggota memiliki komitmen tinggi.
+    * ❌ Minimnya pelatihan kepemimpinan atau manajemen organisasi.
+    * ❌ Terkadang kurangnya koordinasi dalam menjalankan program.
 
 - Opportunities (Peluang)
 
-* 🌟 Bisa menjalin kerja sama dengan organisasi sosial lain.
-* 🌟 Mengembangkan usaha sosial atau koperasi pemuda.
-* 🌟 Meningkatkan keterampilan anggota melalui pelatihan kerja dan wirausaha.
+    * 🌟 Bisa menjalin kerja sama dengan organisasi sosial lain.
+    * 🌟 Mengembangkan usaha sosial atau koperasi pemuda.
+    * 🌟 Meningkatkan keterampilan anggota melalui pelatihan kerja dan wirausaha.
 
 - Threats (Ancaman)
 
-* ⚠️ Kurangnya minat pemuda untuk bergabung karena sibuk dengan pekerjaan atau pendidikan.
-* ⚠️ Pergantian kepengurusan yang tidak terarah, menyebabkan kurangnya kontinuitas program.
-* ⚠️ Tantangan dalam adaptasi terhadap perkembangan teknologi dan digitalisasi.
-* ⚠️ Kurangnya dukungan dari masyarakat atau pemerintah di beberapa daerah.
+    * ⚠️ Kurangnya minat pemuda untuk bergabung karena sibuk dengan pekerjaan atau pendidikan.
+    * ⚠️ Pergantian kepengurusan yang tidak terarah, menyebabkan kurangnya kontinuitas program.
+    * ⚠️ Tantangan dalam adaptasi terhadap perkembangan teknologi dan digitalisasi.
+    * ⚠️ Kurangnya dukungan dari masyarakat atau pemerintah di beberapa daerah.
