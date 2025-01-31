@@ -11,7 +11,7 @@ Beberapa permasalahan utama yang dihadapi Karang Taruna antara lain:
 2. Kurangnya pelatihan kepemimpinan dan manajemen organisasi.
 3. Minimnya pemanfaatan teknologi dalam pengelolaan kegiatan dan komunikasi.
 
-* 3. Rumusan Masalah
+# 3. Rumusan Masalah
 
 Berdasarkan identifikasi masalah di atas, rumusan masalah yang diajukan adalah:
 
@@ -21,7 +21,7 @@ Berdasarkan identifikasi masalah di atas, rumusan masalah yang diajukan adalah:
 
 3. Bagaimana menghadapi ancaman yang dapat menghambat perkembangan organisasi?
 
-4. Tujuan Penelitian
+# 4. Tujuan Penelitian
 
 Tujuan dari analisis SWOT ini adalah:
 
@@ -31,7 +31,7 @@ Tujuan dari analisis SWOT ini adalah:
 
 - Merancang sistem berbasis teknologi untuk meningkatkan efisiensi dan efektivitas Karang Taruna.
 
-5. Metode Analisis (SWOT)
+# 5. Metode Analisis (SWOT)
 
 - Strengths (Kekuatan)
 
