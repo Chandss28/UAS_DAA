@@ -1,45 +1,26 @@
 @startuml
-|Anggota|
-start
-:Isi Formulir Pendaftaran;
-:Validasi Data Keanggotaan;
-if (Data Valid?) then (yes)
-  :Simpan Data Keanggotaan;
-  :Kirim Notifikasi Pendaftaran Sukses;
-else (no)
-  :Tampilkan Error;
-endif
+actor Anggota
+actor Admin
 
-|Anggota|
-:Login dengan Kredensial;
-:Verifikasi Data Login;
-if (Data Valid?) then (yes)
-  :Masuk ke Dashboard;
-else (no)
-  :Tampilkan Error;
-endif
+rectangle "Sistem Karang Taruna" {
+  Anggota -- (Registrasi Anggota)
+  Anggota -- (Login)
+  Anggota -- (Pilih Kegiatan)
+  Anggota -- (Pendaftaran Kegiatan)
+  Anggota -- (Pelaporan Kegiatan)
 
-|Anggota|
-:Pilih Kegiatan;
-:Tampilkan Detail Kegiatan;
+  Admin -- (Verifikasi Laporan Kegiatan)
+  Admin -- (Verifikasi Kehadiran)
+  Admin -- (Kelola Anggota)
+  Admin -- (Kelola Kegiatan)
+  Admin -- (Kelola Sistem)
+  Admin -- (Kelola Pendaftaran Kegiatan)
+}
 
-|Anggota|
-:Pendaftaran Kegiatan;
-:Simpan Data Partisipasi;
-:Kirim Notifikasi Pendaftaran Berhasil;
+(Registrasi Anggota) .> (Login) : <<include>>
+(Pilih Kegiatan) .> (Pendaftaran Kegiatan) : <<include>>
+(Pelaporan Kegiatan) .> (Verifikasi Laporan Kegiatan) : <<extend>>
+(Kelola Anggota) .> (Kelola Kegiatan) : <<extend>>
+(Kelola Kegiatan) .> (Kelola Pendaftaran Kegiatan) : <<extend>>
 
-|Anggota|
-:Melakukan Pelaporan Kegiatan;
-
-|Admin|
-:Verifikasi Laporan Kegiatan;
-
-|Admin|
-:Simpan Laporan Kegiatan;
-
-|Admin|
-:Verifikasi Kehadiran Anggota;
-:Update Status Kehadiran;
-
-stop
 @enduml
