@@ -70,6 +70,9 @@
 *  FlowChart
     ![alt text](<Screenshot 2025-01-31 164808.png>)
 
+*   UseCase
+    ![alt text](<Screenshot 2025-02-01 002313.png>)
+
 # 7. Implementasi Teknologi
 
     Untuk mendukung sistem ini, teknologi yang dapat digunakan meliputi:

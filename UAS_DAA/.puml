@@ -1,26 +1,40 @@
 @startuml
-actor Anggota
-actor Admin
+
+actor "Anggota" as Anggota
+actor "Administrator" as Admin
 
 rectangle "Sistem Karang Taruna" {
-  Anggota -- (Registrasi Anggota)
-  Anggota -- (Login)
-  Anggota -- (Pilih Kegiatan)
-  Anggota -- (Pendaftaran Kegiatan)
-  Anggota -- (Pelaporan Kegiatan)
-
-  Admin -- (Verifikasi Laporan Kegiatan)
-  Admin -- (Verifikasi Kehadiran)
-  Admin -- (Kelola Anggota)
-  Admin -- (Kelola Kegiatan)
-  Admin -- (Kelola Sistem)
-  Admin -- (Kelola Pendaftaran Kegiatan)
+  usecase "Registrasi Anggota" as UC1
+  usecase "Login" as UC2
+  usecase "Melihat Daftar Kegiatan" as UC3
+  usecase "Mendaftar Kegiatan" as UC4
+  usecase "Mengikuti Kegiatan" as UC5
+  usecase "Melaporkan Kegiatan" as UC6
+  usecase "Kelola Anggota" as UC7
+  usecase "Kelola Kegiatan" as UC8
+  usecase "Verifikasi Kehadiran" as UC9
+  usecase "Verifikasi Laporan Kegiatan" as UC10
+  usecase "Mengelola Pengumuman" as UC11
+  usecase "Mengirim Notifikasi" as UC12
 }
 
-(Registrasi Anggota) .> (Login) : <<include>>
-(Pilih Kegiatan) .> (Pendaftaran Kegiatan) : <<include>>
-(Pelaporan Kegiatan) .> (Verifikasi Laporan Kegiatan) : <<extend>>
-(Kelola Anggota) .> (Kelola Kegiatan) : <<extend>>
-(Kelola Kegiatan) .> (Kelola Pendaftaran Kegiatan) : <<extend>>
+Anggota --> UC1
+Anggota --> UC2
+Anggota --> UC3
+Anggota --> UC4
+Anggota --> UC5
+Anggota --> UC6
+
+Admin --> UC7
+Admin --> UC8
+Admin --> UC9
+Admin --> UC10
+Admin --> UC11
+Admin --> UC12
+
+UC4 ..> UC5 : <<include>>
+UC5 ..> UC6 : <<include>>
+UC6 ..> UC10 : <<extend>>
+UC11 ..> UC12 : <<include>>
 
 @enduml
