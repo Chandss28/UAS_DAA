@@ -65,12 +65,15 @@
     3. Pendaftaran Kegiatan: Pendaftaran acara dan dokumentasi kegiatan.
 
 *   ERD
+    
     ![alt text](<Screenshot 2025-01-31 163802.png>)
 
 *  FlowChart
+
     ![alt text](<Screenshot 2025-01-31 164808.png>)
 
 *   UseCase
+    
     ![alt text](<Screenshot 2025-02-01 002313.png>)
 
 # 7. Implementasi Teknologi
