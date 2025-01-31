@@ -1,9 +1,9 @@
 # Sosial dan Komunitas Karang Taruna
-1. Latar Belakang
+# 1. Latar Belakang
 
 Karang Taruna adalah organisasi sosial kepemudaan yang berperan dalam pembangunan dan kesejahteraan masyarakat di tingkat desa atau kelurahan. Organisasi ini memiliki peran penting dalam memberdayakan pemuda melalui kegiatan sosial, ekonomi, dan pengembangan keterampilan. Namun, dalam operasionalnya, Karang Taruna sering menghadapi berbagai tantangan seperti kurangnya pendanaan, minimnya keterlibatan pemuda, dan kurangnya koordinasi antar anggota. Oleh karena itu, diperlukan analisis SWOT untuk mengidentifikasi kekuatan, kelemahan, peluang, dan ancaman yang dihadapi.
 
-2. Identifikasi Masalah
+# 2. Identifikasi Masalah
 
 Beberapa permasalahan utama yang dihadapi Karang Taruna antara lain:
 
@@ -11,7 +11,7 @@ Beberapa permasalahan utama yang dihadapi Karang Taruna antara lain:
 2. Kurangnya pelatihan kepemimpinan dan manajemen organisasi.
 3. Minimnya pemanfaatan teknologi dalam pengelolaan kegiatan dan komunikasi.
 
-3. Rumusan Masalah
+* 3. Rumusan Masalah
 
 Berdasarkan identifikasi masalah di atas, rumusan masalah yang diajukan adalah:
 
