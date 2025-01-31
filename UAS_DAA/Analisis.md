@@ -73,8 +73,8 @@
     ![alt text](<Screenshot 2025-01-31 164808.png>)
 
 *   UseCase
-    
-    ![alt text](<Screenshot 2025-02-01 002313.png>)
+
+    ![alt text](<Screenshot 2025-02-01 054442.png>)
 
 # 7. Implementasi Teknologi
 
@@ -83,6 +83,27 @@
     - Website atau Aplikasi Mobile untuk pengelolaan kegiatan Karang Taruna.
     - Database MySQL/MariaDB untuk menyimpan data keanggotaan dan kegiatan.
     - Framework Laravel atau Django untuk backend sistem.
+
+- Konfigurasi Docker
+    version: '3.8'
+    services:
+    app:
+        build: .
+        container_name: laravel_app
+        volumes:
+        - .:/var/www/html
+        depends_on:
+        - db
+    db:
+        image: mysql:8
+        container_name: mysql_db
+        environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: remaja_masjid
+        MYSQL_USER: user
+        MYSQL_PASSWORD: password
+        ports:
+        - "3306:3306"
 
 # 8. Implementasi Fitur Berdasarkan Studi Kasus
 
