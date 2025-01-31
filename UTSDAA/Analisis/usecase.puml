@@ -1,0 +1,24 @@
+@startuml
+actor Admin
+actor Customer
+
+usecase "Login" as UC1
+usecase "Kelola Merchandise" as UC2
+usecase "Tambah Merchandise" as UC3
+usecase "Perbarui Merchandise" as UC4
+usecase "Lihat Merchandise" as UC5
+usecase "Notifikasi Perubahan Data" as UC6
+usecase "Login sebagai Admin atau Customer" as UC7
+
+UC7 --> Admin
+Admin --> UC1
+Admin --> UC2
+Admin --> UC3
+Admin --> UC4
+Admin --> UC6
+
+UC7 --> Customer
+Customer --> UC1
+Customer --> UC5
+
+@enduml

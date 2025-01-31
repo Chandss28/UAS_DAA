@@ -1,0 +1,27 @@
+@startuml
+start
+:Admin atau Customer membuka sistem;
+if (Login Berhasil?) then (Ya)
+  if (Role == "Admin") then (Ya)
+    :Admin memilih modul "Kelola Merchandise";
+    if (Apakah ingin menambah merchandise baru?) then (Ya)
+      :Admin mengisi data merchandise baru;
+      :Simpan data ke sistem;
+    else (Tidak)
+      :Admin memilih merchandise yang akan diperbarui;
+      :Melakukan perubahan data merchandise;
+    endif
+    :Kirim notifikasi ke admin atau staff terkait;
+  else (Role == "Customer")
+    :Customer memilih modul "Lihat Merchandise";
+    :Customer melihat daftar merchandise yang tersedia;
+    :Keluar dari sistem;
+  endif
+else (Tidak)
+  :Login Gagal;
+  :Tampilkan Pesan Error;
+  :Arahkan untuk Login Ulang;
+endif
+:Proses selesai;
+stop
+@enduml
