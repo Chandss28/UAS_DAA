@@ -67,6 +67,9 @@
 *   ERD
     ![alt text](<Screenshot 2025-01-31 163802.png>)
 
+*  FlowChart
+    ![alt text](<Screenshot 2025-01-31 164808.png>)
+
 # 7. Implementasi Teknologi
 
     Untuk mendukung sistem ini, teknologi yang dapat digunakan meliputi:

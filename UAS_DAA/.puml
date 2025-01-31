@@ -1,25 +1,45 @@
-CREATE TABLE T_Keanggotaan (
-    id_anggota INT PRIMARY KEY AUTO_INCREMENT,
-    nama VARCHAR(100),
-    usia INT,
-    alamat TEXT,
-    kontak VARCHAR(20),
-    peran ENUM('Ketua', 'Sekretaris', 'Bendahara', 'Anggota')
-);
+@startuml
+|Anggota|
+start
+:Isi Formulir Pendaftaran;
+:Validasi Data Keanggotaan;
+if (Data Valid?) then (yes)
+  :Simpan Data Keanggotaan;
+  :Kirim Notifikasi Pendaftaran Sukses;
+else (no)
+  :Tampilkan Error;
+endif
 
-CREATE TABLE T_Kegiatan (
-    id_kegiatan INT PRIMARY KEY AUTO_INCREMENT,
-    nama_kegiatan VARCHAR(100),
-    tanggal DATE,
-    lokasi VARCHAR(255),
-    penyelenggara VARCHAR(100)
-);
+|Anggota|
+:Login dengan Kredensial;
+:Verifikasi Data Login;
+if (Data Valid?) then (yes)
+  :Masuk ke Dashboard;
+else (no)
+  :Tampilkan Error;
+endif
 
-CREATE TABLE T_Partisipasi (
-    id_partisipasi INT PRIMARY KEY AUTO_INCREMENT,
-    id_anggota INT,
-    id_kegiatan INT,
-    status ENUM('Terdaftar', 'Hadir', 'Tidak Hadir'),
-    FOREIGN KEY (id_anggota) REFERENCES T_Keanggotaan(id_anggota) ON DELETE CASCADE,
-    FOREIGN KEY (id_kegiatan) REFERENCES T_Kegiatan(id_kegiatan) ON DELETE CASCADE
-);
+|Anggota|
+:Pilih Kegiatan;
+:Tampilkan Detail Kegiatan;
+
+|Anggota|
+:Pendaftaran Kegiatan;
+:Simpan Data Partisipasi;
+:Kirim Notifikasi Pendaftaran Berhasil;
+
+|Anggota|
+:Melakukan Pelaporan Kegiatan;
+
+|Admin|
+:Verifikasi Laporan Kegiatan;
+
+|Admin|
+:Simpan Laporan Kegiatan;
+
+|Admin|
+:Verifikasi Kehadiran Anggota;
+:Update Status Kehadiran;
+
+stop
+@enduml
